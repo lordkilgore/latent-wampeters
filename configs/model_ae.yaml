@@ -1,0 +1,22 @@
+model: 
+  model_type: "BaseModelConfig"
+  hidden_dim: 32
+  img_size: 224
+
+dataset:
+  modality: "vision"
+  data_dir: "./data/images"
+
+training:
+  epochs: 10
+  lr: 1e-4
+  batch_size: 32
+  optimizer: 'AdamW'
+  loss: 'mse'
+  weight_decay: 1e-5
+  chkpt_dir: "./checkpoints/autoencoder" 
+
+wandb:
+  name: 'autoencoder'
+  entity: 'wisph8-uc-berkeley-electrical-engineering-computer-sciences'
+  project: 'latent-wampeters'

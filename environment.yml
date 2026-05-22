@@ -1,0 +1,9 @@
+name: latent-wampeters
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - python==3.11.15
+  - pytorch
+  - matplotlib
+prefix: /home/phoenixw/miniconda3/envs/latent-wampeters
